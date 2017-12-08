@@ -1,5 +1,5 @@
 # Redux Blog Posts
-Simple Blog Posts for Redux with React, React Router, Redux Form and Babel support.
+Simple Blog Posts for Redux with React, React Router, Redux Form, Validation and Babel support.
 
 ### Getting Started
 
