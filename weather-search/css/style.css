@@ -1,0 +1,22 @@
+.navbar {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.navbar-brand img {
+	display: inline-block;
+	max-height: 20px;
+	margin-top: -8px;
+	margin-right: 10px;
+}
+.input-group {
+	margin: 20px 0;
+}
+th, td {
+	vertical-align: middle !important;
+	text-align: center !important;
+}
+td:first-of-type {
+	width: 250px;
+	height: 200px;
+}

@@ -1,0 +1,12 @@
+.navbar-brand img {
+	display: inline-block;
+	max-height: 20px;
+	margin-top: -8px;
+	margin-right: 10px;
+}
+form a {
+	margin-left: 5px;
+}
+button {
+	cursor: pointer;
+}
