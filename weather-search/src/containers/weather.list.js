@@ -6,7 +6,6 @@ import Chart from '../components/chart';
 import GoogleMap from '../components/google.map';
 
 const queryString = require('query-string');
-const uuid = require('uuid/v1');
 
 class WeatherList extends Component {
 	renderWeather(payload) {
@@ -16,9 +15,8 @@ class WeatherList extends Component {
 		const country = geo[1];
 		const data = payload.data;
 		if (!data) {
-			const uid = uuid();
 			return (
-				<tr key={uid}>
+				<tr key={_.uniqueId()}>
 					<td colSpan="4">
 						<span className="text-danger">City "{city}" not found in "{country.toUpperCase()}"!</span>
 					</td>
