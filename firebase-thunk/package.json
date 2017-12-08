@@ -1,7 +1,7 @@
 {
-  "name": "blog-posts",
+  "name": "firebase-thunk",
   "version": "1.0.0",
-  "description": "Simple Blog Posts for Redux with React, React Router, React Form and Babel support",
+  "description": "Simple Contact List for Redux with React, Redux Thunk and Babel support",
   "main": "index.js",
   "repository": "git@github.com:ixdc/react.git",
   "scripts": {
@@ -26,16 +26,14 @@
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
-    "axios": "^0.17.1",
     "babel-preset-stage-1": "^6.1.18",
+    "firebase": "^4.8.0",
     "lodash": "^3.10.1",
     "react": "^0.14.3",
     "react-bootstrap": "^0.31.5",
     "react-dom": "^0.14.3",
     "react-redux": "4.3.0",
-    "react-router": "^2.0.1",
     "redux": "^3.0.4",
-    "redux-form": "^4.1.3",
-    "redux-promise": "^0.5.3"
+    "redux-thunk": "^2.2.0"
   }
 }

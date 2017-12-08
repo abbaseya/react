@@ -9,6 +9,11 @@ class PostsIndex extends Component {
 		this.props.fetchPosts();
 	}
 	renderPosts() {
+		if (!this.props.posts) {
+			return (
+				<li className="list-group-item"><i className="fa fa-circle-o-notch fa-spin fa-2x fa-fw"></i></li>
+			);
+		}
 		return this.props.posts.map((post) => {
 			return (
 				<li className="list-group-item" key={`post-${post._id['$id']}`}>
