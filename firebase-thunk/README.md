@@ -1,5 +1,5 @@
 # Redux Thunk Firebase
-Simple Contact List for Redux with React, Redux Thunk and Babel support.
+Simple Contact List for Redux with React, Redux Thunk, Firebase and Babel support.
 
 ### Getting Started
 

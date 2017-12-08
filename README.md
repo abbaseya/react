@@ -5,7 +5,7 @@ Sample project files
 Simple Blog Posts for Redux with React, React Router, Recat Form and Babel support.
 
 ### [Redux Thunk Firebase](https://github.com/ixdc/react/tree/master/firebase-thunk)
-Simple Contact List for Redux with React, Redux Thunk and Babel support.
+Simple Contact List for Redux with React, Redux Thunk, Firebase and Babel support.
 
 ### [Redux Weather Search](https://github.com/ixdc/react/tree/master/weather-search)
 Simple Weather Forecast Search for Redux with React and Babel support.
