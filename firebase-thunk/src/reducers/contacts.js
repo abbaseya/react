@@ -1,3 +1,5 @@
+import _ from 'lodash';
+
 import {
 	FETCH_CONTACTS,
 	CREATE_CONTACT,
