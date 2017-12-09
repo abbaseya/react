@@ -16,7 +16,7 @@ th, td {
 	vertical-align: middle !important;
 	text-align: center !important;
 }
-td:first-of-type {
-	width: 250px;
-	height: 200px;
+td {
+	width: 220px;
+	max-height: 220px;
 }

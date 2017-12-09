@@ -7,7 +7,7 @@ export default (props) => {
 			<GoogleMapLoader
 				containerElement={
 					<div style={{
-						height: '200px'
+						height: '130px'
 					}}
 					/>
 				}
@@ -30,6 +30,7 @@ export default (props) => {
 						/>
 				}
 				/>
+				<div className="text-primary"><strong>{props.city}</strong></div>
 		</div>
 	);
 }
