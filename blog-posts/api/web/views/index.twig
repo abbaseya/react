@@ -1,0 +1,139 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="alert alert-warning"><i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;ALL requests should have 'Content-Type: application/json' header. Your api is CORS compliant out of the box, so it's capable of cross-domain communication.</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Endpoint</th>
+      <th>Method</th>
+      <th>Example</th>
+      <th>Sample Response</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><i>/api/v1/posts</i></td>
+      <td>GET</td>
+      <td>http://reduxposts.herokuapp.com/api/v1/posts</td>
+      <td>
+<pre>
+[
+  {
+    "_id": {
+      "$id": "5a2a6ce3b6ece764f20041a9"
+    },
+    "title": "Hi!",
+    "categories": "Computer, Friends",
+    "content": "Post about Friends"
+  },
+  {
+    "_id": {
+      "$id": "5a2a6ce2b6ece764f20041a8"
+    },
+    "title": "New Post!",
+    "categories": "Candy",
+    "content": "Post about Candy"
+  }
+]
+</pre>
+      </td>
+      <td>
+        Fetches the 20 most recent posts in the database.
+        Note this list is occasionally cleaned out.</td>
+    </tr>
+    <tr>
+      <td><i>/api/v1/posts</i></td>
+      <td>POST</td>
+      <td>http://reduxposts.herokuapp.com/api/v1/posts
+<br /><b>Request Body:</b>
+<pre>
+{
+  "title": "Hi!",
+  "categories": "Computer, Friends",
+  "content": "Blog post content"
+}
+</pre>
+      </td>
+      <td>
+<pre>
+{
+  "id": "5a2a6e8bb6ece764f20041ad"
+}
+</pre>
+      </td>
+      <td>Creates a new blog post entry. Returns the created blog post ID</td>
+    </tr>
+    <tr>
+      <td><i>/api/v1/posts/:id</i></td>
+      <td>PUT</td>
+      <td>http://reduxposts.herokuapp.com/api/v1/posts/5
+<br /><b>Request Body:</b>
+<pre>
+{
+  "title": "Update Me!",
+  "categories": "UX, BA",
+  "content": "Blog post content updated"
+}
+</pre>
+      </td>
+      <td>
+<pre>
+{
+  "title": "Update Me!",
+  "categories": "UX, BA",
+  "content": "Blog post content updated"
+}
+</pre>
+      </td>
+      <td>Updates a blog post entry with the given ID. Returns the updated blog post</td>
+    </tr>
+    <tr>
+      <td><i>/api/v1/posts/:id</i></td>
+      <td>GET</td>
+      <td>http://reduxposts.herokuapp.com/api/v1/posts/5</td>
+      <td>
+<pre>
+{
+  "_id": {
+    "$id": "5a2a6ce3b6ece764f20041a9"
+  },
+  "title": "Hi!",
+  "categories": "Computer, Friends",
+  "content": "Post about Friends"
+}
+</pre>
+      </td>
+      <td>Fetches a single blog post with the given ID. Includes the blog's content.</td>
+    </tr>
+    <tr>
+      <td><i>/api/v1/posts/:id</i></td>
+      <td>DELETE</td>
+      <td>http://reduxposts.herokuapp.com/api/v1/posts/5</td>
+      <td>
+<pre>
+{
+    "n": 1,
+    "opTime": {
+        "ts": {
+            "sec": 1512730852,
+            "inc": 1
+        },
+        "t": 1
+    },
+    "electionId": {
+        "$id": "7fffffff0000000000000001"
+    },
+    "ok": 1,
+    "err": null,
+    "errmsg": null
+}
+</pre>
+      </td>
+      <td>Deletes a single blog post with the given ID. Returns the post</td>
+    </tr>
+  </tbody>
+</table>
+
+{% endblock %}
