@@ -3,7 +3,9 @@ import React from 'react';
 const VideoPlayer = ({video}) => {
 	if (!video) {
 		return (
-			<div>loading ..</div>
+			<div className="col-md-8 video-detail">
+				<i className="fa fa-circle-o-notch fa-spin fa-fw"></i> loading ..
+			</div>
 		);
 	}
 	const id = video.id.videoId;

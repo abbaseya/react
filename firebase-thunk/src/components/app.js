@@ -77,9 +77,9 @@ class App extends Component {
 		return errors;
 	}
 	renderContacts() {
-		if (!this.props.contacts) {
+		if (this.props.contacts.length == 0) {
 			return (
-				<li className="list-group-item"><i className="fa fa-circle-o-notch fa-spin fa-2x fa-fw"></i></li>
+				<li className="list-group-item"><i className="fa fa-circle-o-notch fa-spin fa-fw"></i></li>
 			);
 		}
 		return _.map(this.props.contacts, (contact, key) => {
