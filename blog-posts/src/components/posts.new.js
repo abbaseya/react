@@ -35,7 +35,7 @@ function validate(values) {
 	return errors;
 }
 
-class PostsNew extends Component {
+export class PostsNew extends Component {
 	static contextTypes = {
 		router: PropTypes.object
 	};

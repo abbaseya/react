@@ -4,7 +4,7 @@ import {Link} from 'react-router';
 
 import {fetchPost, deletePost} from '../actions/index';
 
-class PostsView extends Component {
+export class PostsView extends Component {
 	static contextTypes = {
 		router: PropTypes.object
 	};

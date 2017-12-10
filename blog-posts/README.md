@@ -23,6 +23,11 @@ npm start
 http://localhost:8080
 ```
 
+### Run tests
+```
+npm test
+```
+
 ### Full Setup
 
 1. Modify MongoDB credentials in `blog-posts/api/resources/config/prod.php`:

@@ -5,12 +5,12 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import {fetchPosts} from '../actions/index';
 
-class PostsIndex extends Component {
+export class PostsIndex extends Component {
 	componentWillMount() {
 		this.props.fetchPosts();
 	}
 	renderPosts() {
-		if (this.props.posts.length == 0) {
+		if (!this.props.posts || this.props.posts.length == 0) {
 			return (
 				<li className="list-group-item"><i className="fa fa-circle-o-notch fa-spin fa-fw"></i></li>
 			);

@@ -9,9 +9,10 @@ import reducers from './reducers';
 import routes from './routes';
 
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
+const store = createStoreWithMiddleware(reducers);
 
 ReactDOM.render(
-	<Provider store={createStoreWithMiddleware(reducers)}>
+	<Provider store={store}>
 		<Router history={browserHistory} routes={routes} />
 	</Provider>,
 	document.querySelector('.container')
